@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Minha viagem</h1>
+    <p>Aqui eu mostro minha foto para verem a minha viagem</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagem/foto-pp.jpg" type="image/jpg">
+        <source media="(max-width: 1030px)" srcset="imagem/foto-p.jpg" type="image/jpg">
+        <source media="(max-width: 1500px)" srcset="imagem/foto-m.jpg" type="image/jpg">
+        <img src="imagem/foto-g.jpg" alt="">
+    </picture>
+</body>
+</html>

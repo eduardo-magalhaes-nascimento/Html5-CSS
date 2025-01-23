@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        #corpo{
+            background-image: linear-gradient(to right,#A6866A , #F2EAE4  );
+            font-family: Arial, Helvetica, sans-serif;
+            color: #734E38;
+        }
+
+        header {
+            text-align: center;
+            margin: 10px 10px 40px;
+            
+        }
+        h1 {
+            font-size: 2.3em;
+        }
+
+        main {
+            background: #7e793be4;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #A6866A;
+            
+        }
+
+        div {
+            font-size: 1.5em;
+            padding: 40px 0px 0px;
+            height: 90px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            width: 250px;
+            top: 160px;
+            background: #D9CBBF;
+            border: 2px solid #17171761;
+            border-radius: 10px;
+        }
+        .bot{
+            position: relative;
+            text-align: center;
+            top: 50px;
+            left: 170px;
+            font-size: 1.1em;
+        }
+
+        .input1 {
+            color:#D9CBBF;
+            font-size: 1.25em;
+            position: relative;
+            top: 35px;
+            left: 20px;
+            padding: 5px;
+        }
+        
+        input {
+            font-size: 0.7em;
+            position: relative;
+            
+        }
+
+        
+
+        #peso{
+            position: relative;
+            left: 7px;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <header>
+        <h1>IMC</h1>
+        <p>Projeto em HTML 5 e CSS 3. Imc para calcular o<br> indice de massa corporal e avaliar se esta bem ou não.</p>
+    </header>
+
+    <main>
+        <p class="input1">
+            Digite seu peso: <input  type="number" name="txtn" id="peso">
+        </p>
+        <p class="input1">
+            Digite sua altura: <input type="number" name="txtn" id="altura">
+        </p>
+
+        <button class="bot" onclick="calcular()">Calcular</button> 
+        <button class="bot" onclick="limpar()">Limpar</button>
+
+        <div id="res">
+            
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
