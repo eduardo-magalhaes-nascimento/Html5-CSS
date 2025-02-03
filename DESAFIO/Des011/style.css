@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'passionOne';
+    src: url('pacote-d012/fonts/PassionOne-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family: 'passionBOLD';
+    src: url('pacote-d012/fonts/PassionOne-Bold.ttf') 
+    format('truetype');
+}
+@font-face {
+    font-family: 'passionBlack';
+    src: url('pacote-d012/fonts/PassionOne-Black.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('pacote-d012/fonts/Sriracha-Regular.ttf')
+    format('truetype');
+}
+:root {
+    
+    --font-padrao: Arial, verdana, sans-serif;
+    --font-titulo: 'passionOne', sans-serif;
+    --font-texto: 'Sriracha'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-padrao);
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    height: 180px;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    font-size: 4em;
+    padding-top: 30px;
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    font-weight: normal;
+    padding-top: 10px;
+}
+header > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    margin: 50px 20px;
+    font-family: var(--font-texto);
+    font-size: 1.5em;
+}
+main #div1{
+    background-color: white;
+    
+}
+
+main #imagem1 {
+    background-image: url('pacote-d012/imagens/background001.jpg');
+    
+    height: 450px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+main > #imagem1 >p {
+    background-color: rgba(0, 0, 0, 0.304);
+    color: white;
+    width: 290px;
+}
+
+main #div3 {
+    background-color: white;
+    
+}
+
+main #imagem2 {
+    background-image: url('pacote-d012/imagens/background002.jpg');
+    
+    height: 450px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+main > #imagem2 > p {
+    background-color: rgba(0, 0, 0, 0.304);
+    color: white;
+    width: 300px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
