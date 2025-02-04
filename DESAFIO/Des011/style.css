@@ -34,6 +34,7 @@
 body{
     font-family: var(--font-padrao);
     background-color: darkgray;
+    font-size: 1em;
 }
 
 
@@ -45,7 +46,7 @@ header {
 header > h1 {
     font-family: var(--font-titulo);
     font-weight: normal;
-    font-size: 4em;
+    font-size: 10vw;
     padding-top: 50px;
 }
 
@@ -65,10 +66,13 @@ header > p > a:hover {
 }
 
 section{
+    font-family: var(--font-texto);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2.6vw;
+    
 }
 
 section.normal {
@@ -79,12 +83,30 @@ section.normal {
 section.imagem {
     background-color: rgba(51,51,51);
     color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.397);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section > p {
+    padding-bottom: 2em;
 }
 
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.265);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.429);
+    text-shadow: 2px 2px 1px black;
     color: white;
+    
+}
+
+section#img01 {
+    background-image: url('pacote-d012/imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('pacote-d012/imagens/background002.jpg');
 }
 
 footer {
